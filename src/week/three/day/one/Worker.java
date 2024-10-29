@@ -26,7 +26,7 @@ public class Worker implements Runnable {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        int numberOfWorkers = 3;
+        int numberOfWorkers = 50;
         CountDownLatch latch = new CountDownLatch(numberOfWorkers);
         for (int i = 0; i < 5; i++) {
             new Thread(new Worker(latch)).start();

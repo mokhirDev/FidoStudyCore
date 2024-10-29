@@ -5,7 +5,7 @@ import java.util.concurrent.CyclicBarrier;
 
 public class CyclicBarrierExample {
     public static void main(String[] args) {
-        int count = 2;
+        int count = 5;
         CyclicBarrier cyclicBarrier = new CyclicBarrier(count);
         for (int i = 0; i < 5; i++) {
             new Thread(new Worker(cyclicBarrier)).start();
