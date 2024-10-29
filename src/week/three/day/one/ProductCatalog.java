@@ -67,7 +67,6 @@ class ProductCatalog {
 class LockDemo {
     public static void main(String[] args) {
         ProductCatalog catalog = new ProductCatalog();
-
         catalog.reentrantLockExample();
         catalog.readWriteLockExampleRead();
         catalog.readWriteLockExampleWrite();
